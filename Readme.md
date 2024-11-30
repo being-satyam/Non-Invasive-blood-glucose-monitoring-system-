@@ -4,12 +4,12 @@ This project presents a non-invasive blood glucose monitoring system using near-
 
 ## **Overview**
 
-Traditional blood glucose monitoring methods are invasive, painful, and expensive. This project uses 940 nm infrared sensors to estimate blood glucose levels non-invasively. The system detects voltage variations caused by glucose concentration in blood and processes this data using a custom algorithm implemented on an ESP32.
+Traditional blood glucose monitoring methods are invasive, painful, and expensive. This project uses 940 nm infrared led and BPW34 photodiode to estimate blood glucose levels non-invasively. The system reads the voltage value after the transmission of light through the skin and estimates the blood glucose level using linear regression algorithm implemented on an ESP32.
 
 ## **Key Features**
 
 - **Non-invasive monitoring**: No skin pricking required.
-- **Near-Infrared Technology**: Utilizes 940 nm IR light for glucose detection.
+- **Near-Infrared Technology**: Utilizes 940 nm IR light for glucose detection.(1550 nm would be more precise) 
 - **Real-Time Processing**: Uses interrupts for immediate voltage sampling and response.
 - **FreeRTOS Integration**: Ensures multitasking for data acquisition, processing, and IoT alerts.
 - **IoT Functionality**: Real-time monitoring and notifications via smartphones.
